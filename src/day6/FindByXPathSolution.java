@@ -26,7 +26,13 @@ public class FindByXPathSolution {
             element.sendKeys( "Name" );
         }
 
+        // using index
+        WebElement phone = driver.findElement( By.xpath( "//div[@class='form-group'][4]//input[@type='text']" ) );
+        phone.sendKeys( "6545132468453135" );
 
+        // using child
+        WebElement address = driver.findElement( By.xpath( "//div[@class='form-group'][5]//child::input" ) );
+        address.sendKeys( "My Address" );
         driver.quit();
     }
 }
