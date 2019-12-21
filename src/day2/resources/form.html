@@ -14,33 +14,34 @@
 <body>
 <h1 style="">Practice</h1>
 <h2 style="color: red">Practice</h2>
-<h3>Green title</h3>
+<h3 id="greenTitle">Green title</h3>
 HTML
 <hr>
 <form action="/someUrl" method="GET">
-    <p>Text Box: <br> <input type="text"/></p>
-    <p>Password Input: <br> <input type="password"/></p>
-    <p>Text Area: <br> <textarea></textarea></p>
+    <p>Text Box: <br> <input type="text" name="text"/></p>
+    <p>Password Input: <br> <input type="password" name="password"/></p>
+    <p>Text Area: <br> <textarea name="textarea"></textarea></p>
     <p>
         Dropdown <br>
-        <select>
-            <option>Option 1</option>
-            -->
-            <option>Option 2</option>
-            -->
+        <select name="select">
+            <option value="opt1">Option 1</option>
+            <option value="opt2">Option 2</option>
+            <option value="opt3">Option 3</option>
+            <option value="opt4">Option 4</option>
+            <option value="opt5">Option 5</option>
         </select>
     </p>
     <p>
         Checkbox <br>
-        <input type="checkbox">
+        <input type="checkbox" name="checkbox">
     </p>
     <p>
         Radio Select <br>
-        <input type="radio"/>
-        <input type="radio"/>
-        <input type="radio"/>
+        <input type="radio" name="radio" value="radio1"/>
+        <input type="radio" name="radio" value="radio2"/>
+        <input type="radio" name="radio" value="radio3"/>
     </p>
-    <input type="submit" value="Submit button"/>
+    <input type="submit" value="Submit button" id="submit"/>
 </form>
 
 </body>
