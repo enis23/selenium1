@@ -21,22 +21,30 @@ public class Homework1 {
         WebDriver driver = new ChromeDriver();
         driver.get( "https://www.seleniumeasy.com/test/" );
         List<WebElement> links = driver.findElements( By.cssSelector( ".board-inner a" ) );
+
+        String[] testStringForH3 = { "WELCOME TO SELENIUM EASY DEMO", "BASIC EXAMPLES TO START WITH SELENIUM", "INTERMEDIATE EXAMPLES WITH MOST POPULAR COMPONENTS", "ADVANCED EXAMPLES WITH COMPONENTS", "THANKS FOR STAYING TUNED! WE ARE DONE"};
+        String[] testStringForP = { "We have listed most of the components that are used by developers to build web applications.", "Assuming you have a basic understanding of HTML and CSS.", "Hoppe you had Great fun automating basic demo components.", "  These are not much difficult to Automate. Give a try to automate below components ", "\n" +
+                "                                  Now focus on building automation framework from scratch using Selenium WebDriver.\n" +
+                "                                "};
+
+        int counter = 0;
         for(WebElement link : links) {
             link.click();
             Thread.sleep( 1000 );
             WebElement h3Tag = driver.findElement( By.cssSelector( ".tab-content .active h3" ) );
-            String h3 = "WELCOME TO SELENIUM EASY DEMO";
-            final boolean h3Validation = h3Tag.getText().equals( h3 );
+            boolean h3Validation =  h3Tag.getText().equals( testStringForH3[counter].trim() );
 
             WebElement pTag = driver.findElement( By.cssSelector( ".tab-content .active h3 + p" ) );
-            String p = "We have listed most of the components that are used by developers to build web applications.";
-            final boolean pValidation = pTag.getText().equals( p );
+            boolean pValidation =  pTag.getText().equals( testStringForP[counter].trim() );
 
             if(h3Validation && pValidation) {
                 System.out.println("Success!");
             } else {
                 System.out.println("Failure!");
             }
+
+            counter++;
+
         }
 
 
