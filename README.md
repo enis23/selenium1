@@ -6,6 +6,8 @@ Selenium Exercise and Homework
 * [Day 4.](src/day4) CSS Selectors
 * [Day 5.](src/day5) CSS Selectors - Pseudo Classes 
 * [Day 6.](src/day6) Selenium XPath
+* [Day 7.](src/day7) Selenium Methods
+
 
 
 
