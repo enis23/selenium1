@@ -17,24 +17,24 @@ public class Task2Solution {
         System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
         driver.get( "http://the-internet.herokuapp.com/add_remove_elements/" );
-        clickAndValidateButtons(driver, 100);
-        clickAndDeleteButton(driver, 50);
+        createButtons(driver, 70);
+        deleteButtonsAndValidate(driver, 50);
 
         driver.quit();
     }
 
-    private static void clickAndValidateButtons(WebDriver driver, int num) {
+    private static void createButtons(WebDriver driver, int numberOfButtonsToAdd) {
         WebElement btn = driver.findElement( By.xpath("//*[@onclick='addElement()']"));
-        for (int i = 0; i < num; i++) {
+        for (int i = 0; i < numberOfButtonsToAdd; i++) {
             btn.click();
         }
     }
 
-    private static void clickAndDeleteButton(WebDriver driver, int number) {
-        List<WebElement> elements = driver.findElements( By.xpath( "//*[@onclick='deleteElement()']" ) );
+    private static void deleteButtonsAndValidate(WebDriver driver, int number) {
+        List<WebElement> elements = driver.findElements( By.cssSelector( "[onclick='deleteElement()']" ) );
         int sizeBeforeDeleting = elements.size();
 
-        List<WebElement> buttonsToDelete = driver.findElements(By.xpath("//*[@onclick='deleteElement()']"));
+        List<WebElement> buttonsToDelete = driver.findElements(By.cssSelector("[onclick='deleteElement()']"));
         int counter = 0;
         for(WebElement webElement : buttonsToDelete) {
             counter++;
@@ -44,7 +44,7 @@ public class Task2Solution {
             webElement.click();
         }
 
-        List<WebElement> elementsAfter = driver.findElements( By.xpath( "//*[@onclick='deleteElement()']" ) );
+        List<WebElement> elementsAfter = driver.findElements( By.cssSelector( "[onclick='deleteElement()']" ) );
         int sizeAfterDeleting = elementsAfter.size();
 
         if((sizeBeforeDeleting -  number) == sizeAfterDeleting ) {
