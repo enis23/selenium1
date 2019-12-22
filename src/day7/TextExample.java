@@ -7,16 +7,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ExplicitWaitVisibilityExample {
+public class TextExample {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
-        driver.get( "https://jsfiddle.net/daulet2030/eLy027xg/" ); // span exists. but invisible
-        WebDriverWait wait = new WebDriverWait(driver, 15);
-        driver.switchTo().frame("result");
-        WebElement webElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#test1")));
-        System.out.println(webElement.getText());
-        System.out.println(webElement.getTagName());
+        driver.get( "https://ultimateqa.com/simple-html-elements-for-automation/" );
+        WebElement div = driver.findElement( By.xpath( "//div[contains(@class, 'et_pb_blurb_6')]" ) );
+        System.out.println(div.getText());
         driver.quit();
     }
 }

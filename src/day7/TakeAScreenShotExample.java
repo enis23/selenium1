@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class TakeAScreenShotExample {
     public static void main(String[] args) throws InterruptedException, IOException {
-        System.setProperty( "webdriver.chrome.driver", "/Users/technostudy/Selenium/ChromeDriver/chromedriver" );
+        System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
         driver.get( "https://jsfiddle.net/daulet2030/eLy027xg/" );
         WebDriverWait wait = new WebDriverWait(driver, 15);
