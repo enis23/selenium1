@@ -8,6 +8,6 @@ public class WaitForElementToBeEnabledWithError {
      * wait for <input> of type="text" to be enabled within 2 seconds
      * if <input> of type="text" is still disabled print "Failure"
      * if test failed, take a screenshot and store it in homework4 folder
-     *
+     * This test must fail
      **/
 }
