@@ -8,6 +8,6 @@ public class WaitForElementVisibilityWithError {
      * wait for checkbox to disappear within 2 seconds
      * if checkbox does not disappear print failure
      * if test fails take a screenshot and store inside homework4 folder
-     *
+     * This test must fail
      **/
 }

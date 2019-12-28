@@ -7,5 +7,7 @@ public class SignUpFormSubmissionParsing {
      * submit the form
      * get URL
      * parse values that was submitted and print them out
+     * hint: https://examples.javacodegeeks.com/core-java/net/url/parse-url-example/
+     * like nameOfTheInput = valueOfTheInput
      */
 }

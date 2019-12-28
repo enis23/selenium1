@@ -12,15 +12,17 @@ public class ModalWindowClickProblem {
         WebElement click = driver.findElement( By.id( "restart-ad" ) );
         click.click();
 
-//        try {
-//            click.click();
-//        } catch(ElementClickInterceptedException e){
-//            WebElement element = driver.findElement( By.cssSelector( ".modal-footer" ) ) ;
-//            element.click();
-//        }
+        try {
+            click.click();
+        } catch(ElementClickInterceptedException e){
+            WebElement element = driver.findElement( By.cssSelector( ".modal-footer" ) ) ;
+            element.click();
+        }
 
-//        driver.findElement( By.id( "restart-ad" ) ).click();
-//        driver.findElement( By.id( "restart-ad" ) ).click();
+        Thread.sleep( 2000 );
+        click.click();
+        click = driver.findElement( By.id( "restart-ad" ) );
+        click.click();
 
 //        driver.quit();
     }
