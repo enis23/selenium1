@@ -9,7 +9,7 @@ Selenium Exercise and Homework
 * [Day 7.](src/day7) Selenium Methods
 * [Day 8.](src/day8) Monday Project part 1
 * [Day 9.](src/day9) Selenium Tricks and Homework
-* [Day 10.](src/day10) Selenium Tricks and Homework
+* [Day 10.](src/day10) Homework Solutions
 * [Day 11.](src/day11) Real project examples
 
 
