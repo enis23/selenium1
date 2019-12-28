@@ -15,7 +15,7 @@ public class SignUpFormSubmissionValidationSolution {
     public static void main(String[] args) throws UnsupportedEncodingException {
         System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
-        String path = "file:///" + System.getProperty( "user.dir" ) + "/src/day9/homework/homework1/SignUpFormSolution.html";
+        String path = "file:///" + System.getProperty( "user.dir" ) + "/src/day10/homework/homework1/SignUpFormSolution.html";
         driver.get( path );
 
         Map<String, String> expectedValuesMap = initializeValues();

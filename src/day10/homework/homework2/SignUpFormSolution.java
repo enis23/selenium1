@@ -10,7 +10,7 @@ public class SignUpFormSolution {
     public static void main(String[] args) {
         System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
-        String path = "file:///" + System.getProperty( "user.dir" ) + "/src/day9/homework/homework1/SignUpFormSolution.html";
+        String path = "file:///" + System.getProperty( "user.dir" ) + "/src/day10/homework/homework1/SignUpFormSolution.html";
         driver.get( path );
         driver.findElement( By.name( "username" ) ).sendKeys( "name" );
         driver.findElement( By.name( "password" ) ).sendKeys( "password" );
