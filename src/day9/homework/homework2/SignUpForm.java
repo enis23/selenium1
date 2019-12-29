@@ -5,4 +5,5 @@ public class SignUpForm {
      * open SignUpForm.html
      * fill in your data inside the all input elements
      */
+
 }

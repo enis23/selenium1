@@ -10,4 +10,6 @@ public class SignUpFormSubmissionParsing {
      * hint: https://examples.javacodegeeks.com/core-java/net/url/parse-url-example/
      * like nameOfTheInput = valueOfTheInput
      */
+
+
 }

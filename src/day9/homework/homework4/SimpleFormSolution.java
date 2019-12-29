@@ -48,6 +48,7 @@ public class SimpleFormSolution {
             sb.append( generateRandomWordOfLength( random.nextInt( 10 ) ) + " " );
         }
         return sb.toString();
+
     }
 
 

@@ -20,6 +20,8 @@ public class SignUpFormSolution {
         Select plan = new Select( driver.findElement( By.name( "plan" ) ) );
         plan.selectByIndex( plan.getOptions().size() - 1 ); //selects last option
         driver.findElement( By.name( "agreement" ) ).click();
+
+
 //        driver.quit();
     }
 }

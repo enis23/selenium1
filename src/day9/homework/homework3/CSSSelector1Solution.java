@@ -23,5 +23,7 @@ public class CSSSelector1Solution {
         System.out.println( textToValidate3.equals( textToTest3 ) ? "Success!" : "Failure" );
 
         driver.quit();
+
+
     }
 }

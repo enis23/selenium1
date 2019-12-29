@@ -29,4 +29,5 @@ public class OptionalHomeworkSolution {
         String actualFreePrice = actualFreePriceElement.getText().replaceAll( "\\$", "" );
         System.out.println( testPrice.equals( actualFreePrice ) ? "Success!" : "Failure!" );
     }
+
 }

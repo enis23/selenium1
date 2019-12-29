@@ -30,5 +30,7 @@ public class XPathSolution {
         String xButton = driver.findElement( By.xpath( "//div[@id='flash']/a" ) ).getText();
         String actualText = flashText.replaceAll( xButton, "" ).trim();
         System.out.println(actualText.equals( testText ) ? "Success!": "Failure!");
+
+
     }
 }

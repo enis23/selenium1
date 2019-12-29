@@ -60,6 +60,8 @@ public class SimpleFormWithMathSolution {
             sb.append( generateRandomWordOfLength( random.nextInt( 10 ) ) + " " );
         }
         return sb.toString();
+
+
     }
 
 }
