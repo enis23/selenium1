@@ -9,10 +9,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class OptionalHomeworkSolution {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
         driver.get( "https://ultimateqa.com/automation/fake-pricing-page/" );
+
         validatePrice( driver, "0", "0" );
         validatePrice( driver, "1", "80" );
         validatePrice( driver, "2", "900" );
@@ -20,13 +21,13 @@ public class OptionalHomeworkSolution {
     }
 
     private static void validatePrice(WebDriver driver, String index, String testPrice) {
-        WebElement actualFreePriceElement = driver.findElement( By.cssSelector( ".et_pb_pricing_tables_" + index + " span.et_pb_sum" ) );
-        ((JavascriptExecutor) driver).executeScript( "arguments[0].scrollIntoView(true);", actualFreePriceElement );
+        WebElement price = driver.findElement( By.cssSelector( ".et_pb_pricing_tables_" + index + " span.et_pb_sum" ) );
 
         WebDriverWait wait = new WebDriverWait( driver, 15 );
-        wait.until( ExpectedConditions.visibilityOfAllElements( actualFreePriceElement ) );
+        wait.until( ExpectedConditions.visibilityOfAllElements( price ) );
 
-        String actualFreePrice = actualFreePriceElement.getText().replaceAll( "\\$", "" );
+        String actualFreePrice = price.getText().replaceAll( "\\$", "" );
         System.out.println( testPrice.equals( actualFreePrice ) ? "Success!" : "Failure!" );
+
     }
 }

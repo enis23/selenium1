@@ -15,7 +15,7 @@ public class CSSSelector1Solution {
         System.out.println( textToValidate1.equals( textToTest1 ) ? "Success!" : "Failure" );
 
         String textToValidate2 = "How to deal with a large page that has many elements and divisions?";
-        String textToTest2 = driver.findElement( By.cssSelector( ".et_pb_text_inner > ul > li:first-child" ) ).getText();
+        String textToTest2 = driver.findElement( By.cssSelector( ".et_pb_column_0 ul > li:first-child" ) ).getText();
         System.out.println( textToValidate2.equals( textToTest2 ) ? "Success!" : "Failure" );
 
         String textToValidate3 = "Properly structuring your page objects";

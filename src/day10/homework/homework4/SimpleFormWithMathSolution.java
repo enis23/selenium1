@@ -17,7 +17,7 @@ public class SimpleFormWithMathSolution {
 
         driver.findElement( By.id( "et_pb_contact_name_1" ) ).sendKeys( generateRandomWordOfLength( 10 ) );
         driver.findElement( By.id( "et_pb_contact_message_1" ) ).sendKeys( generateRandomWordsOfLength( 10 ) );
-        String mathProblem = driver.findElement( By.cssSelector( ".et_pb_contact_form_1 span.et_pb_contact_captcha_question" ) ).getText();
+        String mathProblem = driver.findElement( By.cssSelector( "#et_pb_contact_form_second span.et_pb_contact_captcha_question" ) ).getText();
         String solution = solveMathProblem( mathProblem );
         driver.findElement( By.name( "et_pb_contact_captcha_1" ) ).sendKeys( solution );
         driver.findElement( By.cssSelector( ".et_pb_column_1 button" ) ).click();
