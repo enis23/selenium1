@@ -43,7 +43,7 @@ public class ResultsCheckOfPagnationAndBackAndBackAgain {
 
         try {
             wait.until(ExpectedConditions.numberOfElementsToBe(By.cssSelector("tbody > tr "), 2));
-            System.out.println("Success!");
+            System.out.println("Next page Success!");
         } catch (Exception e) {
             System.out.println("Failure!");
         }
@@ -52,7 +52,17 @@ public class ResultsCheckOfPagnationAndBackAndBackAgain {
 
         try {
             wait.until(ExpectedConditions.numberOfElementsToBe(By.cssSelector("tbody > tr "), 10));
-            System.out.println("Success!");
+            System.out.println("Previous page Success!");
+        } catch (Exception e) {
+            System.out.println("Failure!");
+        }
+
+        // click on the last page button
+        // validate there are two items
+        driver.findElement(By.className("mat-paginator-navigation-last")).click();
+        try {
+            wait.until(ExpectedConditions.numberOfElementsToBe(By.cssSelector("tbody > tr "), 2));
+            System.out.println("Last page Success!");
         } catch (Exception e) {
             System.out.println("Failure!");
         }
