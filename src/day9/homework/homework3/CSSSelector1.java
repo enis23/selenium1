@@ -7,4 +7,7 @@ public class CSSSelector1 {
      * find "How to deal with a large page that has many elements and divisions?" using css selector and validate it
      * find "Properly structuring your page objects" using css selector and validate it
      * */
+    public static void main(String[] args) {
+
+    }
 }
