@@ -34,7 +34,7 @@ public class ChromeBrowser {
         driver.findElement(By.xpath("//span[contains(text(),'Search')]")).click();
 
         try {
-            wait.until( ExpectedConditions.presenceOfElementLocated( By.xpath("//td[contains(@class,'name') and contains(text(), '121231233')]") ) );
+            wait.until( ExpectedConditions.presenceOfElementLocated( By.xpath("//td[contains(@class,'name') and contains(text(), '12')]") ) );
             System.out.println("Success!");
         } catch (Exception e){
             System.out.println("Failure!");
