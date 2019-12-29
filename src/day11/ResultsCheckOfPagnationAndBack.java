@@ -43,6 +43,16 @@ public class ResultsCheckOfPagnationAndBack {
 
         try {
             wait.until(ExpectedConditions.numberOfElementsToBe(By.cssSelector("tbody > tr "), 2));
+            System.out.println("Success!");
+        } catch (Exception e) {
+            System.out.println("Failure!");
+        }
+
+        driver.findElement(By.className("mat-paginator-navigation-previous")).click();
+
+        try {
+            wait.until(ExpectedConditions.numberOfElementsToBe(By.cssSelector("tbody > tr "), 10));
+            System.out.println("Success!");
         } catch (Exception e) {
             System.out.println("Failure!");
         }
