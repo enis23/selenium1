@@ -24,6 +24,5 @@ public class CSSSelector1Solution {
 
         driver.quit();
 
-
     }
 }

@@ -31,6 +31,5 @@ public class XPathSolution {
         String actualText = flashText.replaceAll( xButton, "" ).trim();
         System.out.println(actualText.equals( testText ) ? "Success!": "Failure!");
 
-
     }
 }

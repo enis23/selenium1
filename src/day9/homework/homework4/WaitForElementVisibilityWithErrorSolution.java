@@ -29,6 +29,5 @@ public class WaitForElementVisibilityWithErrorSolution {
             File DestFile = new File( System.getProperty( "user.dir" ) + "/src/day9/homework/homework4/visibilityFailed.png" );
             FileUtils.copyFile( file, DestFile );
         }
-
     }
 }

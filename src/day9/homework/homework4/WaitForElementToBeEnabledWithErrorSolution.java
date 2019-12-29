@@ -31,7 +31,5 @@ public class WaitForElementToBeEnabledWithErrorSolution {
         }
 
         driver.quit();
-
-
     }
 }

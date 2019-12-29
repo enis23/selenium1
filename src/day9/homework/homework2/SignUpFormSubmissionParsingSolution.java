@@ -42,6 +42,5 @@ public class SignUpFormSubmissionParsingSolution {
             map.put( key, value );
         }
         return map;
-
     }
 }

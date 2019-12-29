@@ -21,7 +21,6 @@ public class SignUpFormSolution {
         plan.selectByIndex( plan.getOptions().size() - 1 ); //selects last option
         driver.findElement( By.name( "agreement" ) ).click();
 
-
 //        driver.quit();
     }
 }
