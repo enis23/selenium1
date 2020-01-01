@@ -11,6 +11,8 @@ Selenium Exercise and Homework
 * [Day 9.](src/day9) Selenium Tricks and Homework
 * [Day 10.](src/day10) Homework Solutions
 * [Day 11.](src/day11) Real project examples
+* [Day 12.](src/day12) Selenium Practice on real project
+* [Day 13.](src/day13) TestNG introduction
 
 
 
