@@ -1,9 +1,8 @@
 package day8;
 
-import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class assertClass {
     public static void main(String[] args) {
