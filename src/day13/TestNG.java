@@ -5,8 +5,18 @@ import org.testng.annotations.Test;
 
 public class TestNG {
     @Test
-    public void firstTest(){
-//        Assert.fail("First Test FAILED");
+    public void login(){
+        Assert.fail("First Test FAILED");
         System.out.println("First test!");
+    }
+
+    @Test
+    public void createCity(){
+
+    }
+
+    @Test
+    public void updateCity(){
+
     }
 }

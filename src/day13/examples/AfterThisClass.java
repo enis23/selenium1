@@ -23,6 +23,5 @@ public class AfterThisClass {
     @AfterClass
     public void cleanUpAfterClass(){
         System.out.println("Clean up after running all test cases inside this class");
-
     }
 }

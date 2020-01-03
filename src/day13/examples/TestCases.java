@@ -6,17 +6,17 @@ import org.testng.annotations.Test;
 public class TestCases {
 
     @Test
-    public void TestCase1() {
+    public void Nationality() {
         System.out.println("Testing test case 1");
     }
 
-    @Ignore
-    public void TestCase2() {
+    @Test
+    public void City() {
         System.out.println("Testing test case 2");
     }
 
-    @Test(enabled = false)
-    public void TestCase3() {
+    @Test(enabled = true)
+    public void Fee() {
         System.out.println("Testing test case 3");
     }
 }

@@ -20,7 +20,7 @@ public class BeforeThisClass {
         System.out.println("Testing test case 3");
     }
 
-    @org.testng.annotations.BeforeClass
+    @BeforeClass
     public void someSetupBeforeClass(){
         System.out.println("Some setup before running all test cases inside this class");
     }

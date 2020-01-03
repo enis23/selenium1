@@ -22,6 +22,6 @@ public class BeforeEveryMethod {
 
     @BeforeMethod
     public void beforeEveryTestCase(){
-        System.out.println("Some setup before every test case");
+        System.out.println("I am logging in before every test case");
     }
 }
