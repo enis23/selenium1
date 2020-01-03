@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Nationality Test">
+        <classes>
+            <class name="day13.examples.suite.NationalityTestCases"/>
+        </classes>
+    </test>
+    <test name="City Test">
+        <classes>
+            <class name="day13.examples.suite.CityTestCases"/>
+        </classes>
+    </test>
+    <test name="Fee Test">
+        <classes>
+            <class name="day13.examples.suite.FeeTestCases"/>
+        </classes>
+    </test>
+</suite>
