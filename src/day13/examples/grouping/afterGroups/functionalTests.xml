@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test name="Functional Tests">
+        <groups>
+            <run>
+                <include name="functional"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="day13.examples.grouping.afterGroups.NationalityTestCases"/>
+            <class name="day13.examples.grouping.afterGroups.CityTestCases"/>
+            <class name="day13.examples.grouping.afterGroups.FeeTestCases"/>
+            <class name="day13.examples.grouping.afterGroups.AfterTheseGroups"/>
+        </classes>
+    </test>
+</suite>
