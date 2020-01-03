@@ -4,11 +4,10 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class CityTestCases {
-
     @Parameters({"url"})
     @Test
-    public void openWebPage(String myUrl) {
-        System.out.println("Opening: " +  myUrl);
+    public void openWebPage(String s) {
+        System.out.println("Opening: " +  s);
     }
 
     @Test

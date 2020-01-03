@@ -5,14 +5,14 @@ import org.testng.annotations.Test;
 
 public class CityTestCases {
 
-    @Test(dataProvider = "dataProvider")
+    @Test(dataProvider = "cityProvider")
     public void create(String city, String country) {
         System.out.println("Creating city: "+city+" in country: "+country+" test case");
     }
 
-    @Test
-    public void edit() {
-        System.out.println("City edit test case");
+    @Test(dataProvider = "cityProvider")
+    public void edit(String city, String country) {
+        System.out.println("Editing city: "+city+" in country: "+country+" test case");
     }
 
     @Test
@@ -21,7 +21,7 @@ public class CityTestCases {
     }
 
     @DataProvider
-    public Object[][] dataProvider(){
+    public Object[][] cityProvider(){
         /* Object[rows][columns]
          * City     | Country
          * -------------------------
@@ -40,6 +40,7 @@ public class CityTestCases {
 
         data[2][0] = "Istanbul";
         data[2][1] = "Turkey";
+
         return data;
     }
 }
