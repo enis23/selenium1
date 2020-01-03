@@ -18,6 +18,8 @@ public class CityTestCases {
 
     @Test
     public void delete() {
+        Assert.fail("Failed to delete!");
+
         System.out.println("City delete test case");
     }
 }
