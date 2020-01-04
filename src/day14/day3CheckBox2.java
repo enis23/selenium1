@@ -31,18 +31,21 @@ public class day3CheckBox2 {
     }
 
     @Test
-    public void firstTestCase(){
+    public void firstTestCase() {
         List<WebElement> elements = driver.findElements( By.className( "cb1-element" ) );
         for(WebElement element : elements) {
             element.click();
         }
-
         String actualButtonText = driver.findElement( By.id( "check1" ) ).getAttribute( "value" );
         Assert.assertEquals( actualButtonText, "Uncheck All" );
     }
 
     @Test
     public void secondTestCase(){
+        List<WebElement> elements = driver.findElements( By.cssSelector( ".cb1-element:not(:checked)" ) ) ;
+        for(WebElement element : elements) {
+            element.click();
+        }
         driver.findElement( By.className( "cb1-element" ) ).click();
         String actualButtonText = driver.findElement( By.id( "check1" ) ).getAttribute( "value" );
         Assert.assertEquals( actualButtonText, "Check All" );

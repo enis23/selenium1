@@ -57,7 +57,7 @@ public class CheckingValuesTestNG {
         data[2][1] = "#00ff00";
 
         data[3][0] = "h1"; // to show failure
-        data[3][1] = "#00ff00"; // definitely not this color
+        data[3][1] = "#0000ff"; // definitely not this color
 
         return data;
     }

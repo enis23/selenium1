@@ -73,7 +73,7 @@ public class TestNGAsserts {
     }
     @Test
     public void assertEqualsHowToUse(){
-        double actual =  1.1;
+        double actual =  1;
         int expected = 1;
         Assert.assertEquals( actual,  expected );  //
     }
