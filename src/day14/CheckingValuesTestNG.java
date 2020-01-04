@@ -45,7 +45,7 @@ public class CheckingValuesTestNG {
 
     @DataProvider
     public Object[][] colorProvider(){
-        Object[][] data = new Object[3][2];
+        Object[][] data = new Object[4][2];
 
         data[0][0] = "h1";
         data[0][1] = "#0000ff";
@@ -56,14 +56,17 @@ public class CheckingValuesTestNG {
         data[2][0] = "h3";
         data[2][1] = "#00ff00";
 
+        data[3][0] = "h1"; // to show failure
+        data[3][1] = "#00ff00"; // definitely not this color
+
         return data;
     }
 
     @Test(dataProvider = "colorProvider")
-    public void checkElementColorByName(String myTag, String testColor) {
+    public void checkElementColorByName(String myTag, String expectedColor) {
         WebElement h1 = driver.findElement( By.tagName( myTag ) );
-        String h1Color = h1.getCssValue( "color" );
-        String hex = Color.fromString(h1Color).asHex();
-        Assert.assertEquals( hex, testColor );
+        String rgbColor = h1.getCssValue( "color" );
+        String hexColor = Color.fromString(rgbColor).asHex();
+        Assert.assertEquals( hexColor, expectedColor );
     }
 }
