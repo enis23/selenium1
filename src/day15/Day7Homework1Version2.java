@@ -1,16 +1,13 @@
-package day14.homework;
+package day15;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
-public class Homework1 {
+public class Day7Homework1Version2 {
     // repeat Task 3 for all the buttons. Success, warning, danger and info buttons.
     private WebDriver driver;
 
@@ -26,8 +23,7 @@ public class Homework1 {
         driver.quit();
     }
 
-    @Parameters({"button"})
-    @Test
+    @Test(dataProvider = "buttonProvider")
     public void clickButton(String button){
         driver.findElement( By.id( "normal-btn-" + button ) ).click();
         String text = driver.findElement( By.className( "alert-normal-" + button ) ).getText();
@@ -41,5 +37,15 @@ public class Homework1 {
 
         Assert.assertFalse( message.isDisplayed() );
 
+    }
+
+    @DataProvider
+    public Object[][] buttonProvider(){
+        return new Object[][]{
+                {"success"},
+                {"info"},
+                {"warning"},
+                {"danger"},
+        };
     }
 }

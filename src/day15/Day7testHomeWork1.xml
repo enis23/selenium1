@@ -4,25 +4,25 @@
     <test name="Test info">
         <parameter name="button" value="info"></parameter>
         <classes>
-            <class name="day14.homework.Homework1"/>
+            <class name="day15.Day7Homework1"/>
         </classes>
     </test>
     <test name="Tests warning">
         <parameter name="button" value="warning"></parameter>
         <classes>
-            <class name="day14.homework.Homework1"/>
+            <class name="day15.Day7Homework1"/>
         </classes>
     </test>
     <test name="Tests danger">
         <parameter name="button" value="danger"></parameter>
         <classes>
-            <class name="day14.homework.Homework1"/>
+            <class name="day15.Day7Homework1"/>
         </classes>
     </test>
     <test name="Tests success">
         <parameter name="button" value="success"></parameter>
         <classes>
-            <class name="day14.homework.Homework1"/>
+            <class name="day15.Day7Homework1"/>
         </classes>
     </test>
 </suite>
