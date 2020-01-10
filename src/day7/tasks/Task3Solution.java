@@ -12,7 +12,7 @@ public class Task3Solution {
     // then click on X button on the message
     // validate the the message is invisible or not present
     public static void main(String[] args) {
-        System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
+        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\k-eni\\Desktop\\Selenium\\chromedriver\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
         driver.get( "https://www.seleniumeasy.com/test/bootstrap-alert-messages-demo.html" );
         driver.findElement( By.id( "normal-btn-success" ) ).click();
@@ -28,3 +28,5 @@ public class Task3Solution {
         driver.quit();
     }
 }
+
+

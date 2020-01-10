@@ -39,6 +39,7 @@ public class assertClass {
         Assert.assertEquals( "Techno","Techno" );
 
         System.out.println("This is after equals");
+
     }
 }
 

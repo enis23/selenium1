@@ -22,7 +22,7 @@ public class Project8Part1SolutionUsingTestNG {
     @Parameters({"username", "password"})
     @BeforeClass
     public void setup(String username, String password){
-        System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
+        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\k-eni\\Desktop\\Selenium\\chromedriver\\chromedriver.exe" );
         driver = new ChromeDriver();
         driver.get( "https://test-basqar.mersys.io" );
         driver.manage().window().maximize();

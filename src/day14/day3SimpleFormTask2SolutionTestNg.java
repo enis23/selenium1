@@ -15,7 +15,7 @@ public class day3SimpleFormTask2SolutionTestNg {
 
     @BeforeClass
     public void setup() {
-        System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
+        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\k-eni\\Desktop\\Selenium\\chromedriver\\chromedriver.exe" );
         this.driver = new ChromeDriver();
         driver.get( "https://www.seleniumeasy.com/test/basic-first-form-demo.html" );
 

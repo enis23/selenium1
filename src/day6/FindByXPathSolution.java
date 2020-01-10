@@ -14,7 +14,7 @@ public class FindByXPathSolution {
     // by index,
     // also by child
     public static void main(String[] args) {
-        System.setProperty( "webdriver.chrome.driver", "D:\\TechnoStudy\\Selenium\\ChromeDriver\\chromedriver.exe" );
+        System.setProperty( "webdriver.chrome.driver", "C:\\Users\\k-eni\\Desktop\\Selenium\\chromedriver\\chromedriver.exe" );
         WebDriver driver = new ChromeDriver();
         driver.get( "https://www.seleniumeasy.com/test/input-form-demo.html" );
         WebElement email = driver.findElement( By.xpath( "//*[@placeholder='E-Mail Address']" ) );
@@ -33,6 +33,6 @@ public class FindByXPathSolution {
         // using child
         WebElement address = driver.findElement( By.xpath( "//div[@class='form-group'][5]//child::input" ) );
         address.sendKeys( "My Address" );
-        driver.quit();
+//        driver.quit();
     }
 }

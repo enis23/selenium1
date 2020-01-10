@@ -1,4 +1,4 @@
-package Stacks;
+package day7;
 
 import java.util.HashMap;
 import java.util.Stack;
